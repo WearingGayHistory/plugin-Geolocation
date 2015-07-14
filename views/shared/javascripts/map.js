@@ -20,7 +20,7 @@ OmekaMap.prototype = {
         }
         options.position = new google.maps.LatLng(lat, lng);
         options.map = this.map;
-          
+        options.icon = 'http://localhost:8888/wgh/themes/WearingGayHistoryTheme/images/measle_blue.png';  
         var marker = new google.maps.Marker(options);
         
         if (bindHtml) {
@@ -253,7 +253,7 @@ function OmekaMapForm(mapDivId, center, options) {
             jQuery('#geolocation_address').val('');
         }
     });
-	
+    
     // Make the map update on zoom changes.
     google.maps.event.addListener(this.map, 'zoom_changed', function () {
         that.updateZoomForm();
@@ -268,7 +268,7 @@ function OmekaMapForm(mapDivId, center, options) {
         event.stopPropagation();
         return false;
     });
-	
+    
     // Make the return key in the geolocation address input box click the button to find the address.
     jQuery('#geolocation_address').bind('keydown', function (event) {
         if (event.which == 13) {

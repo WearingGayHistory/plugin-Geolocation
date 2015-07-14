@@ -17,6 +17,7 @@ echo pagination_links();
 ?>
 
 <div id="geolocation-browse">
+	<p>Please allow up to one minute for the map to load.</p>
     <?php echo $this->googleMap('map_browse', array('list' => 'map-links', 'params' => $params)); ?>
     <div id="map-links"><h2><?php echo __('Find An Item on the Map'); ?></h2></div>
 </div>
