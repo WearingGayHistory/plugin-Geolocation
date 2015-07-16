@@ -20,7 +20,7 @@ OmekaMap.prototype = {
         }
         options.position = new google.maps.LatLng(lat, lng);
         options.map = this.map;
-        options.icon = 'http://localhost:8888/wgh/themes/WearingGayHistoryTheme/images/measle_blue.png';  
+        options.icon = 'http://wearinggayhistory.com/themes/WearingGayHistoryTheme/images/measle_blue.png';  
         var marker = new google.maps.Marker(options);
         
         if (bindHtml) {
