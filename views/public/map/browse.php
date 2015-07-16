@@ -15,11 +15,14 @@ echo head(array('title' => $title, 'bodyclass' => 'map browse'));
 echo item_search_filters();
 echo pagination_links();
 ?>
-
-<div id="geolocation-browse">
-	<p>Please allow up to one minute for the map to load.</p>
-    <?php echo $this->googleMap('map_browse', array('list' => 'map-links', 'params' => $params)); ?>
-    <div id="map-links"><h2><?php echo __('Find An Item on the Map'); ?></h2></div>
+<div class="row">
+	<div class="col-md-12" id="geolocation-browse">
+		<p>Please allow up to one minute for the map to load.</p>
+    	<?php echo $this->googleMap('map_browse', array('list' => 'map-links', 'params' => $params)); ?>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12" id="map-links"><h2><?php echo __('Find An Item on the Map'); ?></h2></div>
 </div>
 
 <?php echo foot(); ?>
